@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400&display=swap');
+
+:root{
+    --rosa: #B7286D;
+    --verde: #B5CE50;
+    --azul: #3A79D8;
+    --laranja: #E76A35;
+    --cinza: #3b3b3b;
+
+    --fonte: "Alegreya Sans", sans-serif;
+}
+
+body{
+    margin: 0%;
+}
+/*NAV*/
+/*nav home*/
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 0px;
+}
+
+nav ul li{
+    padding: 5px;
+    padding-top: 0px;
+}
+
+nav ul li a{
+    background-color: var(--rosa);
+    padding: 12px;
+    border-radius: 0% 0% 30% 30%;
+    color: white;
+    font-family: var(--fonte);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: var(--verde);
+}
+/*nav curriculo*/
+.nav-curriculo ul li a{
+    background-color: var(--laranja);
+}
+
+.nav-curriculo ul li a:hover{
+    background-color: var(--azul);
+}
+/*nav portfolio*/
+
+/*nav contato*/
+
+.ingles a{
+    background-color: var(--cinza);
+}
+
+/*MAIN*/
+main{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a c";
+}
+
+.imagem-1{
+    grid-area: a;
+}
+
+.texto{
+    grid-area: b;
+    padding-top: 10%;
+}
+
+.imagem-2{
+    grid-area: c;
+}
+
+.imagem-1 img{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    max-width:700px;
+    max-height:700px;
+    width: auto;
+    height: auto;
+}
+
+.imagem-2 img{
+    position: absolute;
+    top: 46%;
+    left: 73%;
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+.texto p{
+    width: 30%;
+}
